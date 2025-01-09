@@ -1,0 +1,137 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Birthday Letter</title>
+    <style>
+        body {
+            margin: 0;
+            padding: 0;
+            font-family: Arial, sans-serif;
+            background: linear-gradient(135deg, #ffafbd, #ffc3a0);
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            height: 100vh;
+            overflow: hidden;
+        }
+
+        .container {
+            width: 80%;
+            max-width: 700px;
+            background-color: #ffffff;
+            border-radius: 15px;
+            box-shadow: 0 4px 10px rgba(0, 0, 0, 0.2);
+            padding: 20px;
+            text-align: center;
+            overflow: hidden;
+        }
+
+        .title {
+            font-size: 2em;
+            font-weight: bold;
+            color: #ff6f61;
+        }
+
+        .message {
+            font-size: 1.2em;
+            margin: 20px 0;
+            line-height: 1.8;
+            color: #444444;
+        }
+
+        .signature {
+            font-size: 1em;
+            color: #888888;
+            margin-top: 20px;
+        }
+
+        audio {
+            margin-top: 20px;
+            width: 100%;
+            border-radius: 10px;
+        }
+        .images {
+            margin: 20px 0;
+            display: flex;
+            justify-content: center;
+            gap: 15px;
+        }
+
+        .images img {
+            width: 150px;
+            height: 150px;
+            border-radius: 10px;
+            object-fit: cover;
+            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+        }
+        .images img:hover {
+            transform: scale(1.1); /* Zoom the image */
+            box-shadow: 0 8px 16px rgba(0, 0, 0, 0.4); /* Larger shadow */
+        }
+
+        /* Responsive design for smaller devices */
+        @media (max-width: 768px) {
+            .title {
+                font-size: 2rem;
+            }
+            .message {
+                font-size: 1rem;
+            }
+            .signature {
+                font-size: 0.9rem;
+            }
+            .images img {
+                width: 30vw;
+                max-width: 120px;
+            }
+        }
+
+        /* Extra small devices (mobile phones) */
+        @media (max-width: 480px) {
+            .title {
+                font-size: 1.6rem;
+            }
+            .message {
+                font-size: 0.9rem;
+            }
+            .signature {
+                font-size: 0.8rem;
+            }
+            .images img {
+                width: 40vw;
+                max-width: 100px;
+            }
+        }
+
+    </style>
+</head>
+<body>
+    <div class="container">
+        <div class="title">Happy Birthday!</div>
+        <div class="message">
+            Dear Ashte Happy,  
+            <br><br>
+            Wishing you a day filled with love, laughter, and all the things that make you happiest.  
+            You deserve nothing but the best, today and always.
+            
+            <br><br>
+            Enjoy your special day to the fullest!  
+        </div>
+
+          <!-- Space for Images -->
+          <div class="images">
+            <img src="1.jpg" alt="Image 1">
+            <img src="2.jpg" alt="Image 2">
+            <img src="3.jpg" alt="Image 3">
+        </div>
+
+        <div class="signature">- With love, Gbboy</div>
+        <audio controls autoplay loop>
+            <source src="birthdayS.mp3" type="audio/mpeg">
+            Your browser does not support the audio element.
+        </audio>
+    </div>
+</body>
+</html>
